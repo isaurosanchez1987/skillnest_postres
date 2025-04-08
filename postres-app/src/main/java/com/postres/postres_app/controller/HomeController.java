@@ -38,4 +38,9 @@ public class HomeController {
 
         return "home";
     }
+
+    @GetMapping("/")
+    public String redirigirHome() {
+        return "redirect:/login";
+    }
 }
